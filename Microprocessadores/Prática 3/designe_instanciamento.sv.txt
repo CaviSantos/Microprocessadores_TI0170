@@ -1,0 +1,19 @@
+module ModuloFilho(a, b, c);
+  input wire a, b;
+  output wire c
+  
+  assign c = a & B;
+  
+endmodule
+
+module ModuloPai(x, y, z);
+  input wire x, y;
+  output z;
+  
+  wire filho_c;
+  
+  ModuloFilho inst_ModuloFilho(.a(x),.b(y),.c(filho_c);
+                                
+  assign z = filho_c;
+  
+endmodule
